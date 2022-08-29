@@ -134,7 +134,7 @@
 //	return 0;
 //}
 
-#include <windows.h>   //使用Sleep时要有
+//#include <windows.h>   //使用Sleep时要有
 //   //简化版
 //int main()
 //{
@@ -156,3 +156,134 @@
 //	return 0;
 //}
 //
+
+//   //练习：输入三次密码
+//#include<string.h>      //使用strcmp比较字符串时需要用这个
+//int main()
+//{
+//    int i = 0;
+//    char password[20] = { 0 };
+//    for (i = 0; i < 3; i++)
+//    {
+//        printf("请输入密码：");
+//        scanf("%s", password);
+//        if (strcmp(password, "123456") == 0)   //俩字符串比较必须用strcmp，不用password=="123456"
+//        {
+//            printf("登入成功\n");
+//            break;
+//        }
+//        else
+//        {
+//            printf("密码错误，请重新输入\n");
+//        }
+//    }
+//    if (3==i)
+//        printf("三次输入错误，账号冻结/n");
+//
+//
+//    return 0;
+//}
+
+//    //猜1到100的数字游戏
+//#include<stdlib.h>  //使用rand函数需要这个
+//#include<time.h>   //使用time函数需要这个
+//void menu()
+//    {
+//    printf("***************\n");
+//    printf("****1,play*****\n");
+//    printf("***************\n");
+//    printf("****2,exit*****\n");
+//    printf("***************\n");
+//    printf("***************\n");
+//    }
+//
+//
+//void game()   //游戏的基础：1，生成随机数，2，猜数字
+//{
+//    int ret = rand() % 100 + 1;   //rand会产生0-32767之间的一个随机数，但是随机的前提是设置随机的起点（用srand来设置起点，一般用时间这个变化量为起点），否则每轮随机数都一样
+//        //%100的余数是0到99，因为随机数要求1到100，所以加1
+//    int guess = 0;
+//    while (1)
+//    {
+//        printf("请猜数字\n");
+//        scanf("%d", &guess);
+//        if (guess < ret)
+//            printf("猜小了\n");
+//        else if (guess > ret)
+//            printf("猜大了\n");
+//        else if (guess == ret)
+//        {
+//            printf("回答正确\n");
+//            break;  //猜对就结束，一定要break，明确哪里结束，哪里填break
+//        }
+// }
+//}
+//
+//
+//int main()
+//{
+//    int input = 0;
+//    //time属于整型，但是rand需要unsigned int类型的，所以要强制转化,方法，加入(强制转化的类型）在变量time前面
+//    srand((unsigned int)time(NULL));   //1，如果srand中间（）为固定数值，则rand产生的数固定不变，2，用time（）时间戳可以将时间转化为量（随机数） 3，null为空值，因为time一般要输入参数，但此处不用
+//
+//      //在主函数main中写srand，确保只产生一次随机数（一次是足够多的），避免时间太短，导致根据时间产生的随机数在重开时与上一局差不多
+//
+//    do    //因为是先玩游戏再判断是否继续，所以用do while （先执行后判断）
+//    {
+//        menu();  //先打印菜单
+//        printf("请选择：");
+//        scanf("%d", &input);
+//        switch (input)
+//        {
+//        case 1:printf("开始游戏\n");
+//            game();
+//            break;
+//        case 2:printf("结束游戏\n");
+//            break;
+//        default:printf("输入错误，请重新输入\n");
+//            break;
+//        }
+//    } while (input);  //这个while相当于没有限制，可以不断进行游戏
+//
+//    return 0;
+//}
+
+    //求俩个数的最大公约数
+int main()
+{
+    int m; int n;
+    int max = m < n ? m:n;  //使用三目操作符快速等于小的一个，假设最大公约数为小的那个，不是则循环递减
+    scanf("%d %d", &m, &n);
+    while (1)   //1使无限循环
+    {
+        if (m % max == 0 && 0 == n % max)
+            printf("%d", max);
+        break;
+        max--;
+    }
+
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
