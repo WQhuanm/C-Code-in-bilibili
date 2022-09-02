@@ -1,3 +1,0 @@
-﻿  打印字符类型，选择·重复语句，计算函数.c
-D:\VS文件\Project2\Project2\打印字符类型，选择·重复语句，计算函数.c(40,8): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“int”
-  Project2.vcxproj -> D:\VS文件\Project2\Debug\Project2.exe
