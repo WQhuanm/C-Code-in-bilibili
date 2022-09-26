@@ -11,14 +11,25 @@
 //}
 
 
-           //2，指针类型决定了指针一步走多远（步长）
-int main() {
-    int arr1[10] = { 0 }; char arr2[10] = { 0 };
-    int* p = arr1;
-    char* pc = arr2;
-    printf("%p\n", p);
-    printf("%p\n", p+1);    //int类型 一次访问4个字节，所以地址加一一次也是加4个字节
-    printf("%p\n", pc);
-    printf("%p\n", pc+1);   //char则访问一个字节，所以一次加一个字节
+//           //2，指针类型决定了指针一步走多远（步长）
+//int main() {
+//    int arr1[10] = { 0 }; char arr2[10] = { 0 };
+//    int* p = arr1;
+//    char* pc = arr2;
+//    printf("%p\n", p);
+//    printf("%p\n", p+1);    //int类型 一次访问4个字节，所以地址加一一次也是加4个字节
+//    printf("%p\n", pc);
+//    printf("%p\n", pc+1);   //char则访问一个字节，所以一次加一个字节
+//
+//}
+//
 
+
+
+
+                //指针当不知道初始化为什么时，初始化为NULL或者0
+int main() {
+    int* p = NULL;  
+
+    return 0;
 }
