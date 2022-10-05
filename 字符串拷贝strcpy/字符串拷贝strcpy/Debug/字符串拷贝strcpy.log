@@ -1,0 +1,3 @@
+﻿  源.cpp
+D:\VS文件\C-Code-in-bilibili\字符串拷贝strcpy\字符串拷贝strcpy\源.cpp(24,17): error C2440: “初始化”: 无法从“const int *”转换为“int *”
+D:\VS文件\C-Code-in-bilibili\字符串拷贝strcpy\字符串拷贝strcpy\源.cpp(24,13): message : 转换丢失限定符
