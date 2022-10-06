@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "算数转换", "算数转换\算数转换.vcxproj", "{A5998F05-8108-4ADB-9133-80DE82869DAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Debug|x64.ActiveCfg = Debug|x64
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Debug|x64.Build.0 = Debug|x64
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Debug|x86.Build.0 = Debug|Win32
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Release|x64.ActiveCfg = Release|x64
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Release|x64.Build.0 = Release|x64
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Release|x86.ActiveCfg = Release|Win32
+		{A5998F05-8108-4ADB-9133-80DE82869DAA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A3A922A-5D18-4985-BC56-9D7E46CCEE11}
+	EndGlobalSection
+EndGlobal
