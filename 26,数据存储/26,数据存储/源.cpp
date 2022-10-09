@@ -31,17 +31,33 @@ using namespace std;
 //    return 0;
 //  }
 
+//
+//int main() {
+//    unsigned int i;
+//    for (i = 9; i >= 0; --i) {   //这样将死循环，因为i=0后，减为-1，实际是无穷大，因为unsigned int
+//        cout << i << endl;
+//    }
+//
+//    return 0;
+//}
+
+
+//
+//int main() {
+//    char a[1000];
+//    for (int i = 0; i < 1000; ++i)a[i] = -1 - i;   //因为char读取1个字节，所以最小到-128，所以是-1，-2，-3.......-128，127，126....2，1，0
+//    printf("%d", strlen(a));  //strlen读到/0停止，char读的是阿斯玛值，所以0就是/0（不读入0（因为不读/0）），所以读到0时停，128+127==255
+//    return 0;
+//}
 
 
 
 
-
-
-
-
-
-
-
+int main() {
+    unsigned char i;//范围是128+127=255
+    for (i = 0; i <= 255; ++i)cout << "haha" << endl;  //死循环，最大是255，再加一又变成1了
+    return 0;
+}
 
 
 
